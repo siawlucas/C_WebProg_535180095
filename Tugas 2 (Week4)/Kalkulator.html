@@ -15,20 +15,11 @@
     <script type="text/javascript">
       function kalkulator() {
 
-      //variable angka satu
-      var angkaPertama = parseInt(document.getElementById("angkaPertama").value);
-
-      //variable angka dua
-      var angkaKedua = parseInt(document.getElementById("angkaKedua").value);
-
-      //variable operasi aritmatik
-      var operator = document.getElementById("operator").value;
-
-      //variable angka hasil
-      var hasil = document.getElementById("hasil");
-
-      //variable untuk total angka satu dan angka dua
-      var total;
+        var angkaPertama = parseInt(document.getElementById("angkaPertama").value);
+        var angkaKedua = parseInt(document.getElementById("angkaKedua").value);
+        var operator = document.getElementById("operator").value;
+        var hasil = document.getElementById("hasil");
+        var total;
 
         if (operator == "+") {
             total = angkaPertama + angkaKedua;
@@ -40,9 +31,8 @@
             total = angkaPertama / angkaKedua;
         } else{
             alert('Pilih Operatornya!!!')
-        }
-      
-      hasil.value = total;
+        } 
+        hasil.value = total;
       }
     </script>
 
